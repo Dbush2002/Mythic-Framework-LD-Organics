@@ -1,0 +1,26 @@
+**REPLACE "smoke on the water" files in 'mythic-inventory/server/data/entitys.lua' WITH THIS ONE**
+--------------------------------------------------------------------------------------------------
+
+{
+		id = 94,
+		slots = 164,
+		capacity = 4000,
+		name = "LD Organics Storage",
+		restriction = {
+			job = {
+				id = "weed",
+			},
+		},
+	},
+	{
+		id = 95,
+		slots = 52,
+		capacity = 600,
+		name = "LD Organics Safe",
+		restriction = {
+			job = {
+				id = "weed",
+				permissionKey = "JOB_ACCESS_SAFE",
+			},
+		},
+	},
