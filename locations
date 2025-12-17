@@ -1,0 +1,118 @@
+** EDIT DEFAULT LUA WITH THIS ONE LOCATED IN 'mythic-restaurant/configs/restaurants/smokeonthewater.lua" **
+------------------------------------------------------------------------------------------------------------
+
+table.insert(Config.Restaurants, {
+    Name = "LD Organics",
+    Job = "weed",
+    Benches = {
+        food = {
+            label = "Crafting",
+            targeting = {
+                actionString = "Preparing",
+                icon = "cannabis",
+                poly = {
+                    coords = vector3(-1150.01, -1431.15, 5.16),
+                    l = 2.2,
+                    w = 1.4,
+                    options = {
+                        heading = 40,
+                        debugPoly=true,
+                        minZ = 2.39,
+                        maxZ = 5.59
+                    },
+                },
+            },
+            recipes = {
+                {
+                    result = { name = "baggy", count = 2 },
+                    items = {
+                        { name = "plastic", count = 8 },
+                    },
+                    time = 5000,
+                },
+                {
+                    result = { name = "weed_baggy", count = 2 },
+                    items = {
+                        { name = "weed_bud", count = 2 },
+                        { name = "baggy", count = 1 },
+                    },
+                    time = 5000,
+                },
+                {
+                    result = { name = "weed_joint", count = 2 },
+                    items = {
+                        { name = "cloth", count = 2 },
+                        { name = "weed_bud", count = 2 },
+                        { name = "glue", count = 3 },
+                    },
+                    time = 5000,
+                },
+            },
+        },
+    },
+     Storage = {
+        {
+            id = "weed-storage",
+            type = "box",
+            coords = vector3(-1139.63, -1431.46, 5.44),
+            width = 1.2,
+            length = 2.0,
+            options = {
+                heading = 216,
+                debugPoly=true,
+                minZ = 4.17,
+                maxZ = 6.23
+            },
+			data = {
+                business = "weed",
+                inventory = {
+                    invType = 94,
+                    owner = "weed-storage",
+                },
+			},
+        },
+     },
+    Pickups = {
+        {
+            id = "weed-pickup-1",
+            coords = vector3(-1131.56, -1423.32, 5.28),
+            width = 0.5,
+            length = 0.6,
+            options = {
+                heading = 35,
+                debugPoly=true,
+                minZ = 5.12,
+                maxZ = 5.31
+            },
+			data = {
+                business = "weed",
+                inventory = {
+                    invType = 25,
+                    owner = "weed-pickup-1",
+                },
+			},
+        },
+        {
+            id = "weed-pickup-2",
+            coords = vector3(-1135.37, -1425.90, 5.44),
+            width = 0.5,
+            length = 0.6,
+            options = {
+                heading = 35,
+                debugPoly=true,
+                minZ = 5.13,
+                maxZ = 5.30
+            },
+			data = {
+                business = "weed",
+                inventory = {
+                    invType = 25,
+                    owner = "weed-pickup-2",
+                },
+			},
+        },
+    },
+    -- Warmers = {
+
+    -- },
+})
