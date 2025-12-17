@@ -1,0 +1,11 @@
+** ADD THIS TO 'mythic-businesses/client/dutyZones.lua'**
+----------------------------------------------------------
+
+Polyzone.Create:Box('weed_offdutyzone', vector3(-1143.13, -1428.85, 5.14), 35.6, 30.6, {
+        heading = 32,
+        --debugPoly=true,
+        minZ = 2.36,
+        maxZ = 15.16
+    }, {
+        goOffDuty = 'weed'
+    })
